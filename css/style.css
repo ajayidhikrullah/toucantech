@@ -1,0 +1,14 @@
+div.container{
+    border: red 2px solid;
+    margin: auto;
+    /* background-color: grey; */
+
+}
+
+.navbar-header a.navbar-brand h3{
+    /* text-align: center; */
+    display: flex;
+    line-height: 3px;
+    margin-left: 200px  ;
+
+}
