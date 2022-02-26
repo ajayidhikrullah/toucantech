@@ -1,11 +1,11 @@
-div.container{
-    margin: auto;
+a
+{
+    text-decoration: none;
+    color: #fff;
 }
 
-.navbar-header a.navbar-brand h3{
-    display: flex;
-    line-height: 3px;
-    margin-left: 200px  ;
 
+
+.card-header.logo{
+    background-color: rgb(0, 110, 201);
 }
-
