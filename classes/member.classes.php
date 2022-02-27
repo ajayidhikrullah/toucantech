@@ -18,7 +18,6 @@ class Addmember extends Dbh{
             $_SESSION['status'] = 'Member Added successfully';
             header('Location: ../index.php');
         $stmt = null;
-
         }
 
     }
