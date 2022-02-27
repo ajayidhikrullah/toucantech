@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
 // include other necessary classes
 include "../classes/config.classes.php";
 include '../classes/member.classes.php';
-include '../classes/member_contr.classes.php';
+include '../classes/member.contr.classes.php';
 
     // lets instantiate
 // $addmember = new Addmember();

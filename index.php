@@ -19,7 +19,7 @@
                 <div class="card-body col-md-6 offset-md-3">
                     <h4>More schools can be added</h4>
                     <form action="include/school.inc.php" method="POST">    
-                        <input type="text" class="form-control " id="floatingInput" name="school" placeholder="add more schools...">
+                        <input type="text" class="form-control" id="floatingInput" name="school" placeholder="add more schools...">
                         <hr>
                         <!-- <label for="floatingInput">Name of school</label> -->
 

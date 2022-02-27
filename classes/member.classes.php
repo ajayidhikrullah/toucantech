@@ -2,6 +2,7 @@
 session_start();
 
 class Addmember extends Dbh{
+    
     protected function setMember($fullname, $email, $school){
         $stmt = $this->connect()->prepare('INSERT INTO members_tb (fullName, email, schools_id) VALUES (?, ?, ?);');
         // var_dump($stmt);exist();

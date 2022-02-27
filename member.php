@@ -36,7 +36,7 @@
                     foreach($schools as $eachSchool){
                     // var_dump($eachSchool);exit()
                 ?>
-                    <option><?php echo $eachSchool['name'] ?></option>
+                    <option value = <?php echo $eachSchool['id'] ?> > <?php echo $eachSchool['name'] ?></option>
               <?php
             }?>
                     </select>
