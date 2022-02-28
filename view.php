@@ -1,13 +1,9 @@
 <?php
+    // here, Iimported memberslist.classes.php to get the data from SQL querying database. 
     include 'header.php';
     include 'classes/memberslist.classes.php';
-    // include 'classes/schoollist.classes.php';
-
-    // fetch the school data
     $fetchMembers = new Fetchmembers();
     $members = $fetchMembers->getMembers();
-    // var_dump($members['email']);exit();
-    
 ?>
 
 <hr>
@@ -22,9 +18,9 @@
         </tr>
     </thead>
     <tbody>
+        <!-- loop out each of the data in fields below -->
         <?php
-            foreach($members as $eachMember){
-                ?>
+            foreach($members as $eachMember){?>
                 <?php echo
                 "<tr>
                     <th scope='row'>" . $eachMember['id'] . "</th>
@@ -36,36 +32,6 @@
         }?>
     </tbody>
 </table>
-
-<!-- display all members for a selected school -->
-<!-- <table class="table">
-    <h4>List of Member details</h4>
-    <thead class="table-primary">
-        <tr>
-            <th scope="col">S/N</th>
-            <th scope="col">Member Name</th>
-            <th scope="col">Email</th>
-            <th scope="col"></th>
-        </tr>
-    </thead>
-    <tbody> -->
-        
-        <?php
-            // foreach($members as $eachMembers){ ?>
-                <?php //echo
-                // "<tr>
-                    // <th scope='row'>" . $eachMembers['id'] . "</th>
-                    // <td>" . $eachMembers['fullName'] . "</td>
-                    // <td>" . $eachMembers['email'] . "</td>
-                    // <td>" . $eachMembers['schools_id'] . "</td>
-                // </tr>";
-            ?>
-        <?php
-        // }
-        ?>
-    <!-- </tbody>
-</table> -->
-
 
 <?php
 
