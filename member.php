@@ -5,7 +5,6 @@
     // fetch the school data
     $fetchSchools = new Fetchschool();
     $schools = $fetchSchools->getSchools();
-
     // return success or failed message
 ?>
 <!-- start FOrMs -->

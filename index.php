@@ -8,7 +8,6 @@
 
     // return success or failed message
 ?>
-
             <hr>
             <!-- Add new member -->
             <div class="card text-center">

@@ -29,13 +29,18 @@
             </li>
 
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="member.php">Create Member</a>
+            <a class="nav-link" aria-current="page" href="member.php">Create Member</a>
             </li>
 
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="view.php">View Member</a>
+            <a class="nav-link" aria-current="page" href="view.php">View Member</a>
             </li>
-            
+
+            <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="viewschools.php">View Schools</a>
+            </li>
+
+
             </ul>
             </li>
         </ul>

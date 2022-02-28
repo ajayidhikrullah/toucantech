@@ -2,7 +2,10 @@
     include 'config.classes.php';
     Class Fetchmembers extends Dbh{
         public function getMembers(){
-            $sql = "SELECT * FROM members_tb ORDER BY `schools_id` DESC;";
+            $id = $_GET['id'];
+            // $sql = "SELECT * FROM members_tb ORDER BY `id` DESC;";
+            // $sql = "SELECT * FROM members_tb;";
+            $sql = "SELECT id, fullName, email FROM members_tb WHERE schools_id = '7'";
             $stmt = $this->connect()->prepare($sql);
             $stmt->execute();
             $members = $stmt->fetchAll();
