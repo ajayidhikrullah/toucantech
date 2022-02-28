@@ -2,7 +2,7 @@
     // here, Iimported memberslist.classes.php to get the data from SQL querying database. 
     include 'header.php';
     include 'classes/memberslist.classes.php';
-    $fetchMembers = new Fetchmembers();
+    $fetchMembers = new Fetchmembers(); //Instantiated the Members class and saved in a variable
     $members = $fetchMembers->getMembers();
 ?>
 

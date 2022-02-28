@@ -1,9 +1,13 @@
 <?php
-
+// Member class
 class MemberContr extends Addmember{
     private $fullname;
     private $email;
     private $school;
+
+    /*
+
+    */
 
     public function __construct($fullname, $email, $school){
         $this->fullname = $fullname;

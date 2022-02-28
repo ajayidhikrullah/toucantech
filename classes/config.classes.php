@@ -1,6 +1,9 @@
 <?php
 
 class Dbh{
+    /*
+    * database class
+    */
     private $dbServerName = "localhost";
     private $dbUsername = "root";
     private $dbPassword = "";

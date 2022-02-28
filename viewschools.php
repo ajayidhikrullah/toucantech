@@ -9,7 +9,7 @@
 
 <hr>
 
-<!-- display all members for a selected school -->
+<!-- display all schools for a selected school in an hyperlink field-->
 <table class="table">
         <h4>List of Schools</h4>
         <thead class="table-primary">
@@ -19,21 +19,19 @@
             </tr>
         </thead>
         <tbody>
-        
+
+        <!-- fetch the data fromschools table and save in $eachSchool variable -->
         <?php
-            foreach($schools as $eachSchool){ ?>
-                <?php echo
+            foreach($schools as $eachSchool){?>
+            <?php echo
                 "<tr>
                     <th scope='row'>" . $eachSchool['id'] . "</th>
                     <td> <a class='nav-link' href='view.php?id={$eachSchool['id']}'>" . $eachSchool['name'] . " </a></td>
                 </tr>";
             ?>
-        <?php
-        }
-        ?>
+        <?php;}?>
     </tbody>
 </table>
-
 
 <?php
     include 'footer.php';

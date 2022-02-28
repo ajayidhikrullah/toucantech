@@ -1,7 +1,11 @@
 
 <?php
     include 'config.classes.php';
-    Class Fetchschool extends Dbh{
+    /**
+     * Gets the list of all schools
+     * 
+     */
+       Class Fetchschool extends Dbh{
         public function getSchools(){
             $sql = "SELECT * FROM schools_tb ORDER BY `id` DESC;";
             $stmt = $this->connect()->prepare($sql);
