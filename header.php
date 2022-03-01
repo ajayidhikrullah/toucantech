@@ -29,9 +29,9 @@
                 <a class="nav-link" aria-current="page" href="member.php">Create Member</a>
                 </li>
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="view.php">View Member</a>
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="viewschools.php">View Schools</a>
@@ -49,7 +49,6 @@
             unset($_SESSION['status']);
         }
     ?>
-
     <!-- script I added from Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 

@@ -1,5 +1,6 @@
 <?php
-    // here, Iimported memberslist.classes.php to get the data from SQL querying database. 
+    session_start();
+    // here, I imported memberslist.classes.php to get the data from SQL querying database. 
     include 'header.php';
     include 'classes/memberslist.classes.php';
     $fetchMembers = new Fetchmembers(); //Instantiated the Members class and saved in a variable
@@ -7,6 +8,9 @@
 ?>
 
 <hr>
+
+<!-- Return success message -->
+
 <!-- List of schools -->
 <table class="table">
     <h4>List of Member Schools</h4>
@@ -25,16 +29,16 @@
                 "<tr>
                     <th scope='row'>" . $eachMember['id'] . "</th>
                     <td>" . $eachMember['fullName'] . "</td>
-                    <td><a class='nav-link' href='view.php?id={$eachMember['schools_id']}'>{$eachMember['email']}</a><td>
+                    <td>" . $eachMember['email'] . "<td>
                 </tr>";
             ?>
         <?php
-        }?>
+            ;}
+        ?>
+        <!-- <td><a class='nav-link' href='view.php?id={$eachMember['schools_id']}'>{$eachMember['email']}</a><td> -->
     </tbody>
 </table>
 
 <?php
-
     include 'footer.php';
-
 ?>

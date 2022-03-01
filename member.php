@@ -1,11 +1,16 @@
 <?php
-    // session_start();
+    session_start();
     include 'header.php';
     include 'classes/schoollist.classes.php';
     // fetch the school data
     $fetchSchools = new Fetchschool();
     $schools = $fetchSchools->getSchools();
 ?>
+
+<!-- return success message -->
+
+
+
 
 <hr>
 <div class="card text-center">
@@ -15,7 +20,7 @@
 
             <div class="col-md-12 offset-md-3">
                 <div class="form-floating col-sm-6 mb-3">
-                    <input type="text" class="form-control" name="fullName" id="floatingInput" placeholder="full name please...">
+                    <input type="text" class="form-control" name="fullName" id="floatingInput" placeholder="full name please..." required>
                     <label for="floatingInput">Full name</label>
                 </div>
                         

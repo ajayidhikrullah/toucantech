@@ -1,5 +1,5 @@
 <?php
-    // session_start();
+    session_start();
     include 'header.php';
     include 'classes/schoollist.classes.php';
     // fetch the school data
@@ -8,6 +8,9 @@
 ?>
 
 <hr>
+
+<!-- return success or error message -->
+
 
 <!-- display all schools for a selected school in an hyperlink field-->
 <table class="table">
@@ -29,7 +32,9 @@
                     <td> <a class='nav-link' href='view.php?id={$eachSchool['id']}'>" . $eachSchool['name'] . " </a></td>
                 </tr>";
             ?>
-        <?php;}?>
+        <?php
+        ;}
+        ?>
     </tbody>
 </table>
 

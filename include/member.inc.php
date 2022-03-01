@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
 // var_dump('ggg');exit();
 // include other necessary classes
 include "../classes/config.classes.php"; //database connection
-include '../classes/member.classes.php'; //
+include '../classes/member.classes.php';
 include '../classes/member.contr.classes.php';
 
 /*

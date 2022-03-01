@@ -2,7 +2,6 @@
     session_start();
     include 'header.php';
     include 'classes/schoollist.classes.php'; //this is handling the data from sql query
-
     $fetchSchools = new Fetchschool();     // fetch the school data
     $schools = $fetchSchools->getSchools();
 ?>
@@ -16,7 +15,7 @@
         <div class="card-body col-md-6 offset-md-3">
             <h4>More schools can be added</h4>
             <form action="include/school.inc.php" method="POST">    
-                <input type="text" class="form-control" required id="floatingInput" name="school" placeholder="add more schools...">
+                <input type="text" class="form-control" id="floatingInput" name="school" placeholder="add more schools..." required>
                 <hr>
                 <button class="btn btn-lg btn-primary" name="add_school">Add School</button>
                 <hr>
@@ -24,11 +23,10 @@
         </div>
     </div>
 </div>
-
-           
+      
 <?php
 
-include 'footer.php';
+    include 'footer.php';
 
 ?>
 

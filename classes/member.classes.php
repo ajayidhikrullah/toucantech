@@ -3,7 +3,7 @@ session_start();
 class Addmember extends Dbh{
     /*
         *
-        *
+        *Member classes handles the save into members table and return error message or success message
         *
     */
     protected function setMember($fullname, $email, $school){
@@ -12,14 +12,14 @@ class Addmember extends Dbh{
 
         if(!$stmt->execute(array($fullname, $email, $school))){
             $stmt = null;
-            $_SESSION['status'] = 'Member cannot be added';
-            header('Location: ../index.php');
+            $_SESSION['status'] = "<div class='btn btn-danger'>Member cannot be added</div>";
+            header('Location: ../viewschools.php');
             // echo 'Wrong submission...';
             $stmt = null;
             exit();
         } else{
-            $_SESSION['status'] = 'Member Added successfully';
-            header('Location: ../index.php');
+            $_SESSION['status'] = "<div class='btn btn-success'>Member Added successfully</div>";
+            header('Location: ../viewschools.php');
         $stmt = null;
         }
     }

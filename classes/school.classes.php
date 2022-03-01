@@ -11,14 +11,14 @@ class Addschool extends Dbh{
         // var_dump($stmt);exist();
         if(!$stmt->execute(array($school))){
             $stmt = null;
-            $_SESSION['status'] = 'Sorry, School cannot be added, try again!';
-            header('Location: ../index.php');
+            $_SESSION['status'] = "<div class='btn btn-danger'>Sorry, School cannot be added, try again!</div>";
+            header('Location: ../member.php');
             // echo 'Wrong submission...';
             $stmt = null;
             exit();
         } else{
-            $_SESSION['status'] = 'Bravo! School added successfully';
-            header('Location: ../index.php');
+            $_SESSION['status'] = "<div class='btn btn-success'>Bravo! School added successfully</div>";
+            header('Location: ../member.php');
         $stmt = null;
         }
 

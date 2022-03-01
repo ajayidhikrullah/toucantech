@@ -1,0 +1,11 @@
+# Database name: toucantech_db
+# Host: localhost
+
+#STEPS
+import the toucantech_db.sql Database
+download the toucantech zipped folder
+copy or cut to localhost root folder
+    # windows: C:\xampp\htdocs and create a folder of your choice
+run XAMPP or LAMP depending on the server you use
+
+confirm @ http://localhost/toucantech/index.php
